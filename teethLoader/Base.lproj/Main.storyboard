@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="teethLoader" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="内圈-法式小香肠" translatesAutoresizingMaskIntoConstraints="NO" id="9DI-SS-Wvi">
+                                <rect key="frame" x="220" y="220" width="160" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="ODd-73-OAA"/>
+                                    <constraint firstAttribute="width" constant="160" id="cwE-1z-twx"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CLONING DEVICE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Sa-Z6-TlO">
+                                <rect key="frame" x="240" y="282" width="120" height="18"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="15"/>
+                                <color key="textColor" red="0.46274509800000002" green="0.82352941180000006" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="XXX XX" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cyf-QB-0to">
+                                <rect key="frame" x="262" y="308" width="75.5" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ILe-4O-gBD" customClass="ProgressView" customModule="teethLoader" customModuleProvider="target">
+                                <rect key="frame" x="20" y="560" width="560" height="20"/>
+                                <color key="backgroundColor" red="0.0" green="0.3411764705882353" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="XDj-gG-m0u"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6bG-k6-eFk" customClass="ProgressView" customModule="teethLoader" customModuleProvider="target">
+                                <rect key="frame" x="20" y="532" width="560" height="20"/>
+                                <color key="backgroundColor" red="0.0" green="0.3411764706" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="YwM-qb-Snt"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Force Pair-Connctivity " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ygg-iT-5kM">
+                                <rect key="frame" x="20" y="510" width="129" height="13.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
+                                <color key="textColor" red="0.46274509800000002" green="0.82352941180000006" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="appropriation in progress" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nDA-Kv-pXb">
+                                <rect key="frame" x="149" y="512" width="408.5" height="11"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                <color key="textColor" red="0.0" green="0.50980392159999999" blue="0.70588235290000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="253" verticalHuggingPriority="251" text="0%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AyA-0R-5m4">
+                                <rect key="frame" x="565" y="512" width="14.5" height="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" red="0.0" green="0.50980392159999999" blue="0.70588235290000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="外圈(1)" translatesAutoresizingMaskIntoConstraints="NO" id="SUa-N9-asZ">
+                                <rect key="frame" x="150" y="150" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="H5L-dO-TOZ"/>
+                                    <constraint firstAttribute="width" constant="300" id="xdb-QY-PPi"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="AyA-0R-5m4" firstAttribute="leading" secondItem="nDA-Kv-pXb" secondAttribute="trailing" constant="8" symbolic="YES" id="8TG-na-cpH"/>
+                            <constraint firstItem="6bG-k6-eFk" firstAttribute="top" secondItem="Ygg-iT-5kM" secondAttribute="bottom" constant="8" symbolic="YES" id="BgH-se-8oR"/>
+                            <constraint firstItem="9Sa-Z6-TlO" firstAttribute="centerX" secondItem="9DI-SS-Wvi" secondAttribute="centerX" id="MYV-iL-Xld"/>
+                            <constraint firstItem="9DI-SS-Wvi" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="PRe-pK-vlb"/>
+                            <constraint firstItem="Cyf-QB-0to" firstAttribute="centerX" secondItem="9Sa-Z6-TlO" secondAttribute="centerX" id="Pmz-08-izY"/>
+                            <constraint firstItem="9DI-SS-Wvi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PyM-KQ-Cpr"/>
+                            <constraint firstItem="ILe-4O-gBD" firstAttribute="trailing" secondItem="6bG-k6-eFk" secondAttribute="trailing" id="YHZ-Mw-YXW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ILe-4O-gBD" secondAttribute="trailing" id="cGK-tW-02s"/>
+                            <constraint firstItem="SUa-N9-asZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dbl-J9-w6X"/>
+                            <constraint firstItem="ILe-4O-gBD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ddm-5a-34l"/>
+                            <constraint firstItem="nDA-Kv-pXb" firstAttribute="leading" secondItem="Ygg-iT-5kM" secondAttribute="trailing" id="diH-rx-rbU"/>
+                            <constraint firstItem="SUa-N9-asZ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="eMi-xr-etQ"/>
+                            <constraint firstItem="ILe-4O-gBD" firstAttribute="top" secondItem="6bG-k6-eFk" secondAttribute="bottom" constant="8" id="kET-cc-xxt"/>
+                            <constraint firstItem="ILe-4O-gBD" firstAttribute="leading" secondItem="6bG-k6-eFk" secondAttribute="leading" id="mGS-Av-6KH"/>
+                            <constraint firstItem="6bG-k6-eFk" firstAttribute="leading" secondItem="Ygg-iT-5kM" secondAttribute="leading" id="pGn-hg-yGG"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="ILe-4O-gBD" secondAttribute="leading" id="sWQ-F7-8J4"/>
+                            <constraint firstItem="AyA-0R-5m4" firstAttribute="trailing" secondItem="6bG-k6-eFk" secondAttribute="trailing" id="slh-8l-E17"/>
+                            <constraint firstItem="Cyf-QB-0to" firstAttribute="top" secondItem="9Sa-Z6-TlO" secondAttribute="bottom" constant="8" id="u0w-D4-TCj"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ILe-4O-gBD" secondAttribute="bottom" constant="20" id="vC8-cJ-eFt"/>
+                            <constraint firstItem="nDA-Kv-pXb" firstAttribute="baseline" secondItem="Ygg-iT-5kM" secondAttribute="baseline" id="xxa-EI-00p"/>
+                            <constraint firstItem="9Sa-Z6-TlO" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="yhf-kz-RWE"/>
+                            <constraint firstItem="6bG-k6-eFk" firstAttribute="top" secondItem="AyA-0R-5m4" secondAttribute="bottom" constant="8" id="zfU-Ie-WbR"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="ddm-5a-34l"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="cloneText" destination="9Sa-Z6-TlO" id="3JL-T7-6Do"/>
+                        <outlet property="inCircle" destination="9DI-SS-Wvi" id="3MF-ps-fk7"/>
+                        <outlet property="myProgressView" destination="6bG-k6-eFk" id="DPo-lT-Oeu"/>
+                        <outlet property="showEnergyText" destination="AyA-0R-5m4" id="EoU-jF-YOm"/>
+                        <outlet property="showProgressView" destination="ILe-4O-gBD" id="8Br-gz-5wG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="317"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="内圈-法式小香肠" width="184" height="180"/>
+        <image name="外圈(1)" width="300" height="300"/>
+    </resources>
+</document>

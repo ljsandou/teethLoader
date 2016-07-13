@@ -12,9 +12,9 @@ import UIKit
 class TeethLoaderView : UIView {
   
   let numberOfTeeth = UInt(60) // Number of teeth to render
-  let teethSize = CGSize(width:6, height:28) // The size of each individual tooth
+  let teethSize = CGSize(width:6, height:22) // The size of each individual tooth
   let animationDuration = NSTimeInterval(5.0) // The duration of the animation
-  var highlightColor = UIColor(red: 145/255, green: 120/255, blue: 60/255, alpha: 1)
+  var highlightColor = UIColor(red: 216/255, green: 131/255, blue: 46/255, alpha: 1)
   // let highlightColor = UIColor(red: 29.0/255.0, green: 175.0/255.0, blue: 255.0/255.0, alpha: 1) // The color of a tooth when it's 'highlighted'
   let inactiveColor = UIColor.clearColor()
   // let inactiveColor = UIColor(red: 233.0/255.0, green: 235.0/255.0, blue: 236.0/255.0, alpha: 1) // The color of a tooth when it isn't 'hightlighted'
@@ -102,7 +102,9 @@ class TeethLoaderView : UIView {
     let deltaAngle = CGFloat(2*M_PI)/CGFloat(teethCount); // The change in angle between paths
     
     // Create the template path of a single shape.
-    let p = CGPathCreateWithRect(CGRectMake(-teethSize.width*0.5, radius, teethSize.width, teethSize.height), nil);
+    let p = CGPathCreateWithRoundedRect(CGRectMake(-teethSize.width*0.5, radius, teethSize.width, teethSize.height), teethSize.width/2,teethSize.width/2,nil)
+   // CGPathCreateWithRoundedRect(<#T##rect: CGRect##CGRect#>, <#T##cornerWidth: CGFloat##CGFloat#>, <#T##cornerHeight: CGFloat##CGFloat#>, <#T##transform: UnsafePointer<CGAffineTransform>##UnsafePointer<CGAffineTransform>#>)
+    //let p = CGPathCreateWithRect(CGRectMake(-teethSize.width*0.5, radius, teethSize.width, teethSize.height), nil);
     
     var pathArray = [UIBezierPath]()
     for i in 0..<teethCount { // Copy, translate and rotate shapes around

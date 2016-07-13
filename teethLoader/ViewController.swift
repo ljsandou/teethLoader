@@ -37,12 +37,11 @@ class ViewController: UIViewController,viewControllerDataSource {
   
   override func viewDidAppear(animated: Bool) {
     super.viewDidAppear(animated)
-    teethLoader = TeethLoaderView(frame: CGRectMake(view.center.x - 110,view.center.y - 110,220,220))
+    teethLoader = TeethLoaderView(frame: CGRectMake(view.center.x - 108,view.center.y - 108,216,216))
     teethLoader.backgroundColor = UIColor.clearColor()
-    teethLoader.layer.zPosition = -1
-    self.view.backgroundColor = UIColor(red: 52/255, green: 73/255, blue: 94/255, alpha: 1)
+    teethLoader.layer.zPosition = 10
+   // self.view.backgroundColor = UIColor(red: 52/255, green: 73/255, blue: 94/255, alpha: 1)
     self.view.addSubview(teethLoader)
-    
     
     UIView.animateWithDuration(5, animations: {
       self.inCircle.transform = CGAffineTransformIdentity
@@ -80,6 +79,8 @@ class ViewController: UIViewController,viewControllerDataSource {
     }
     
   }
-  
+  override func prefersStatusBarHidden() -> Bool {
+    return true
+  }
 }
 

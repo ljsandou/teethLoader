@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 class TeethLoaderViewCA : UIView {
   
-  let numberOfTeeth = UInt(50) // Number of teetch to render
+  let numberOfTeeth = UInt(35) // Number of teetch to render
   let teethSize = CGSize(width:8, height:45) // The size of each individual tooth
   let animationDuration = NSTimeInterval(5.0) // The duration of the animation
   //default color
@@ -83,10 +83,10 @@ class TeethLoaderViewCA : UIView {
     let deltaAngle = CGFloat(2*M_PI)/CGFloat(teethCount); // The change in angle between paths
     
     // Create the template path of a single shape.
+   // let p = CGPathCreateWithRoundedRect(CGRectMake(-teethSize.width*0.5, radius, teethSize.width, teethSize.height), 10, 10, nil)
+    //let p = CGPathCreateWithRect(rect: CGRect, transform: UnsafePointer<CGAffineTransform>)
     let p = CGPathCreateWithRect(CGRectMake(-teethSize.width*0.5, radius, teethSize.width, teethSize.height), nil)
-    
     let returnPath = CGPathCreateMutable()
-    
     for i in 0..<teethCount { // Copy, translate and rotate shapes around
       let translate = CGAffineTransformMakeTranslation(halfWidth, halfHeight)
       var rotate = CGAffineTransformRotate(translate, deltaAngle*CGFloat(i))

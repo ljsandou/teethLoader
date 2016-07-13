@@ -40,10 +40,10 @@ protocol  viewControllerDataSource {
   }
   
   func setUp(){
-    layer.backgroundColor = UIColor(red: 0/255, green: 46/255, blue: 82/255, alpha: 1).CGColor
-    layer.borderColor = UIColor(red: 0/255, green: 130/255, blue: 180/255, alpha: 1).CGColor
+    layer.backgroundColor  = UIColor.clearColor().CGColor
+    layer.borderColor = UIColor(red: 0/255, green: 148/255, blue: 237/255, alpha: 1).CGColor
     layer.borderWidth = 2
-    barView.backgroundColor = UIColor(red: 0/255, green: 130/255, blue: 180/255, alpha: 1)
+    barView.backgroundColor = UIColor(red: 0/255, green: 148/255, blue: 237/255, alpha: 1)
     addSubview(barView)
   }
   
